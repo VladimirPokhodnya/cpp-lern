@@ -41,13 +41,21 @@ int main() {
     }
   }
 
+  std::string temp = "";
+  temp += word[0];
+
   for (size_t i = 1; i < result.size(); ++i) {
-    if (result[i - 1] == result[i]) {
-      std::cout << result[i];
+    if (result[i - 1] != result[i]) {
+      temp += result[i];
     }
   }
 
-  std::cout << result;
+  if (temp.size() > 4) {
+
+  } else if (temp.size() < 4) {
+  }
+
+  std::cout << temp;
 
   return 0;
 }
