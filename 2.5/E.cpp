@@ -18,7 +18,6 @@ int main() {
   std::reverse(str.begin(), str.end());
 
   if (str == tmp) {
-    // std::cout << str << ' ' << tmp;
     std::cout << "YES";
   } else {
     std::cout << "NO";
