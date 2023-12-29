@@ -3,27 +3,21 @@
 #include <vector>
 
 int main() {
-  int arr[3];
+
+  size_t m, n, k;
 
   struct xy {
     int x;
     int y;
-  } xy;
+  };
+
+  std::cin >> m >> n >> k;
 
   std::vector<struct xy> coord;
+  coord.reserve(k);
+  for (size_t i = 0; i < k; i++) {
+    std::cin >> coord[i].x >> coord[i].y;
+  }
 
-  std::string data;
-  std::getline(std::cin, data);
-
-  // std::cout << "atoi(\"12 34\") = " << atoi("1234") << std::endl;
-  // std::cout << "atoi(\"1234текст\") = " << atoi("1234текст") << std::endl;
-  // std::cout << "atoi(\" \\n \\r 1234\") = " << atoi(" \n \r 1234") <<
-  // std::endl; std::cout << "atoi(\"+1234\") = " << atoi("+1234") << std::endl;
-  // std::cout << "atoi(\"-1234\") = " << atoi("-1234") << std::endl;
-  // std::cout << "atoi(\"числа нет\") = " << atoi("числа нет") << std::endl;
-  // std::cout << "atoi(\"  +1234 все вместе\") = " << atoi("  +1234 все
-  // вместе")
-  //           << std::endl;
-  /* code */
   return 0;
 }
