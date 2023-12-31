@@ -12,8 +12,6 @@ int main() {
   for (size_t i = 0; i < mine; i++) {
     size_t x, y;
     std::cin >> x >> y;
-    // x--;
-    // y--;
     board[x][y] = 9;
 
     board[x - 1][y + 1] += 1;
@@ -35,7 +33,7 @@ int main() {
       } else {
         std::cout << board[i][j];
       }
-      if (j < cols - 3) {
+      if (j < cols) {
         std::cout << ' ';
       }
     }
