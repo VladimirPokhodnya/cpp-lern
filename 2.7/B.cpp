@@ -6,8 +6,7 @@ std::string CommonPrefix(const std::vector<std::string> &words);
 
 int main() {
   const std::vector<std::string> word(
-      // {"apple", "apricot", "application", "ap"});
-      {});
+      {"apple", "apricot", "application", "ap"});
 
   std::string res = CommonPrefix(word);
 
